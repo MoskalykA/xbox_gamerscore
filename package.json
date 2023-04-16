@@ -1,0 +1,28 @@
+{
+  "name": "xbox_gamerscore",
+  "version": "1.0.0",
+  "description": "A function to find the Gamerscore from a Gamertag",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoskalykA/xbox_gamerscore.git"
+  },
+  "keywords": [
+    "xbox",
+    "gamerscore"
+  ],
+  "author": "MoskalykA",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^21.1.1",
+    "superagent": "^8.0.9"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.1",
+    "@types/superagent": "^4.1.16",
+    "jsdom": "^21.1.1",
+    "superagent": "^8.0.9",
+    "typescript": "^5.0.4"
+  }
+}
