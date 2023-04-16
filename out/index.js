@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.search = void 0;
 const superagent_1 = __importDefault(require("superagent"));
 const jsdom_1 = __importDefault(require("jsdom"));
 const { JSDOM } = jsdom_1.default;
@@ -25,10 +26,4 @@ const search = (gamerTag) => {
     });
     return promise;
 };
-search("hello")
-    .then((gameScore) => {
-    console.log(gameScore);
-})
-    .catch((reason) => {
-    console.error(reason);
-});
+exports.search = search;

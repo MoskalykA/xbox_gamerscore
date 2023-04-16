@@ -1,6 +1,6 @@
 {
   "name": "xbox_gamerscore",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A function to find the Gamerscore from a Gamertag",
   "main": "out/index.js",
   "types": "out/index.d.ts",
