@@ -4,6 +4,9 @@
   "description": "A function to find the Gamerscore from a Gamertag",
   "main": "out/index.js",
   "types": "out/index.d.ts",
+  "scripts": {
+    "build": "node build.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MoskalykA/xbox_gamerscore.git"
@@ -23,6 +26,7 @@
     "@types/superagent": "^4.1.16",
     "jsdom": "^21.1.1",
     "superagent": "^8.0.9",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "esbuild": "0.17.17"
   }
 }
