@@ -8,7 +8,7 @@ const superagent_1 = __importDefault(require("superagent"));
 const jsdom_1 = __importDefault(require("jsdom"));
 const { JSDOM } = jsdom_1.default;
 const search = (gamerTag) => {
-    const promise = new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         superagent_1.default
             .get(`https://www.xboxgamertag.com/search/${gamerTag}`)
             .end((err, res) => {
@@ -24,6 +24,5 @@ const search = (gamerTag) => {
             reject("The gameScore was not found");
         });
     });
-    return promise;
 };
 exports.search = search;

@@ -3,7 +3,7 @@ import jsdom from "jsdom";
 
 const { JSDOM } = jsdom;
 export const search = (gamerTag: string): Promise<number> => {
-  const promise: Promise<number> = new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     superagent
       .get(`https://www.xboxgamertag.com/search/${gamerTag}`)
       .end((err, res) => {
@@ -26,6 +26,4 @@ export const search = (gamerTag: string): Promise<number> => {
         reject("The gameScore was not found");
       });
   });
-
-  return promise;
 };
